@@ -9,11 +9,11 @@ export type SessionUser = {
   role: string
 }
 
-const SESSION_COOKIE = 'zshop_session'
+const SESSION_COOKIE = 'navecom_session'
 
 // Simple signed session token: base64(user.id).expires|hash
 // For a demo e-commerce site without JWT deps, this is sufficient & stateless.
-const SECRET = process.env.SESSION_SECRET || 'zshop-demo-secret-2024'
+const SECRET = process.env.SESSION_SECRET || 'navecom-demo-secret-2024'
 
 function hashToken(payload: string) {
   // Use bcrypt for signing — small fixed work-factor for speed in dev
@@ -71,11 +71,11 @@ export async function verifyPassword(plain: string, hash: string): Promise<boole
 
 // Update the demo user to have a real hashed password
 export async function ensureDemoUser() {
-  const existing = await db.user.findUnique({ where: { email: 'demo@zshop.com' } })
+  const existing = await db.user.findUnique({ where: { email: 'demo@navecom.com' } })
   if (!existing) {
     await db.user.create({
       data: {
-        email: 'demo@zshop.com',
+        email: 'demo@navecom.com',
         name: 'Demo User',
         password: await hashPassword('demo1234'),
       },

@@ -103,7 +103,7 @@ export function CartDrawer() {
             <ScrollArea className="flex-1 px-3">
               <div className="space-y-3 py-3">
                 {/* Free shipping progress */}
-                <FreeShippingBanner subtotal={subtotalVal - discount} />
+                <FreeShippingBanner subtotal={subtotalVal - discount} formatCurrency={formatCurrency} />
                 {items.map((item) => (
                   <div key={item.productId} className="flex gap-3 rounded-lg border border-border/60 bg-white p-2.5">
                     <button
@@ -251,7 +251,7 @@ function Row({ label, value, className = '' }: { label: string; value: string; c
   )
 }
 
-function FreeShippingBanner({ subtotal }: { subtotal: number }) {
+function FreeShippingBanner({ subtotal, formatCurrency }: { subtotal: number; formatCurrency: (n: number) => string }) {
   const remaining = Math.max(0, 99 - subtotal)
   const pct = Math.min(100, (subtotal / 99) * 100)
   return (

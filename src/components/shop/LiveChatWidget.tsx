@@ -16,7 +16,7 @@ type Msg = { role: 'user' | 'assistant'; content: string }
 
 const WELCOME: Msg = {
   role: 'assistant',
-  content: "Hi there! 👋 I'm Zoe, your Z Shop assistant. How can I help you today? You can ask me about products, orders, shipping, returns, or anything else!",
+  content: "Hi there! 👋 I'm Nova, your Nav-eCOM assistant. How can I help you today? You can ask me about products, orders, shipping, returns, or anything else!",
 }
 
 const SUGGESTIONS = [
@@ -91,7 +91,7 @@ export function LiveChatWidget() {
     } catch (e: any) {
       setMessages((m) => [...m, {
         role: 'assistant',
-        content: "I'm having trouble responding right now. Please try again or email support@zshop.com.",
+        content: "I'm having trouble responding right now. Please try again or email support@navecom.com.",
       }])
     } finally {
       setSending(false)
@@ -122,7 +122,7 @@ export function LiveChatWidget() {
             className="fixed bottom-20 right-4 z-40 flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 px-4 py-3 text-white shadow-xl ring-2 ring-violet-300/40 transition hover:shadow-2xl sm:bottom-6"
           >
             <MessageCircle size={20} className="shrink-0" />
-            <span className="hidden text-sm font-semibold sm:inline">Ask Zoe</span>
+            <span className="hidden text-sm font-semibold sm:inline">Ask Nova</span>
             {unread > 0 && (
               <span className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-rose-500 text-[10px] font-bold">
                 {unread}
@@ -154,7 +154,7 @@ export function LiveChatWidget() {
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5 text-sm font-bold">
-                    Zoe <Badge className="bg-white/20 px-1 py-0 text-[9px] font-medium hover:bg-white/30">AI</Badge>
+                    Nova <Badge className="bg-white/20 px-1 py-0 text-[9px] font-medium hover:bg-white/30">AI</Badge>
                   </div>
                   <div className="text-[10px] text-white/80">Online · replies instantly</div>
                 </div>
@@ -229,7 +229,7 @@ export function LiveChatWidget() {
                 </Button>
               </form>
               <p className="mt-1 text-center text-[9px] text-muted-foreground">
-                Powered by Z.AI · Responses are AI-generated
+                Powered by Groq AI · Responses are AI-generated
               </p>
             </div>
           </motion.div>

@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z Shop — Shop Smarter, Live Better",
+  title: "Nav-eCOM ✦ Shop Smarter, Live Better",
   description: "Discover millions of products across electronics, fashion, home, books and more. Fast shipping, secure checkout, easy returns.",
-  keywords: ["Z Shop", "ecommerce", "online shopping", "electronics", "fashion", "deals"],
-  authors: [{ name: "Z Shop" }],
+  keywords: ["Nav-eCOM", "ecommerce", "online shopping", "electronics", "fashion", "deals"],
+  authors: [{ name: "Nav-eCOM" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/logo.svg",
   },
   openGraph: {
-    title: "Z Shop — Shop Smarter, Live Better",
+    title: "Nav-eCOM ✦ Shop Smarter, Live Better",
     description: "Millions of products. Fast shipping. Secure checkout.",
     type: "website",
   },

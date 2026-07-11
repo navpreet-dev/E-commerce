@@ -32,7 +32,7 @@ const COLUMNS = [
     ],
   },
   {
-    title: 'About Z Shop',
+    title: 'About Nav-eCOM',
     links: [
       { label: 'Our story', view: null },
       { label: 'Careers', view: null },
@@ -119,7 +119,7 @@ export function Footer() {
       {/* Link columns */}
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-10 sm:grid-cols-3 lg:grid-cols-4">
         <div>
-          <h3 className="mb-3 text-sm font-semibold text-white">Z Shop</h3>
+          <h3 className="mb-3 text-sm font-semibold text-white">Nav-eCOM</h3>
           <p className="text-xs text-zinc-400">Your one-stop shop for everything you love. Shop smarter, live better.</p>
           <div className="mt-3 flex gap-2">
             <SocialIcon icon={Twitter} label="Twitter" />
@@ -175,8 +175,8 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-zinc-400 sm:flex-row">
           <div className="flex flex-wrap items-center gap-4">
-            <span className="flex items-center gap-1"><Phone size={12} className="text-amber-400" /> 1-800-ZSHOP-01</span>
-            <span className="flex items-center gap-1"><Mail size={12} className="text-amber-400" /> support@zshop.com</span>
+            <span className="flex items-center gap-1"><Phone size={12} className="text-amber-400" /> 1-800-NECOM-01</span>
+            <span className="flex items-center gap-1"><Mail size={12} className="text-amber-400" /> support@navecom.com</span>
             <span className="hidden items-center gap-1 sm:flex"><MapPin size={12} className="text-amber-400" /> 123 Commerce St, San Francisco, CA</span>
           </div>
           <div className="flex items-center gap-3">
@@ -192,7 +192,7 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-white/10 bg-zinc-950 py-3 text-center text-[11px] text-zinc-500">
-        © {new Date().getFullYear()} Z Shop. All rights reserved. · Built with Next.js · Demo project.
+        © {new Date().getFullYear()} Nav-eCOM. All rights reserved. · Built with Next.js · Demo project.
       </div>
     </footer>
   )

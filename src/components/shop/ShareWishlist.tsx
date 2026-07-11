@@ -43,8 +43,8 @@ export function ShareWishlistButton() {
     const link = generateLink()
     if (navigator.share) {
       navigator.share({
-        title: 'My Z Shop Wishlist',
-        text: `Check out my wishlist on Z Shop!`,
+        title: 'My Nav-eCOM Wishlist',
+        text: `Check out my wishlist on Nav-eCOM!`,
         url: link,
       }).catch(() => {})
     } else {
@@ -104,7 +104,7 @@ export function ShareWishlistButton() {
                 <span className="text-[10px] font-medium">More...</span>
               </button>
               <a
-                href={`mailto:?subject=My Z Shop Wishlist&body=Check out my wishlist: ${encodeURIComponent(link)}`}
+                href={`mailto:?subject=My Nav-eCOM Wishlist&body=Check out my wishlist: ${encodeURIComponent(link)}`}
                 className="flex flex-col items-center gap-1 rounded-lg border-2 border-border p-3 transition hover:border-amber-300 hover:bg-amber-50 dark:hover:bg-amber-900/20"
               >
                 <div className="grid h-9 w-9 place-items-center rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
@@ -113,7 +113,7 @@ export function ShareWishlistButton() {
                 <span className="text-[10px] font-medium">Email</span>
               </a>
               <a
-                href={`https://wa.me/?text=${encodeURIComponent(`Check out my Z Shop wishlist: ${link}`)}`}
+                href={`https://wa.me/?text=${encodeURIComponent(`Check out my Nav-eCOM wishlist: ${link}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-1 rounded-lg border-2 border-border p-3 transition hover:border-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-900/20"

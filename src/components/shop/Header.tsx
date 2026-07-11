@@ -118,7 +118,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="left" className="w-[280px] bg-white">
               <SheetHeader>
-                <SheetTitle className="text-left">Browse Z Shop</SheetTitle>
+                <SheetTitle className="text-left">Browse Nav-eCOM</SheetTitle>
               </SheetHeader>
               <ScrollArea className="mt-4 h-[calc(100vh-7rem)] pr-3">
                 <div className="space-y-1">
@@ -172,13 +172,13 @@ export function Header() {
           <button
             onClick={() => navigate({ name: 'home' })}
             className="flex shrink-0 items-center gap-1.5 transition-transform hover:scale-[1.02]"
-            aria-label="Z Shop home"
+            aria-label="Nav-eCOM home"
           >
             <div className="grid h-9 w-9 place-items-center rounded-lg bg-zinc-900 text-amber-400 shadow-md">
-              <span className="text-lg font-black">Z</span>
+              <span className="text-lg font-black">N</span>
             </div>
             <div className="hidden sm:block leading-none">
-              <div className="text-lg font-black tracking-tight">Z Shop</div>
+              <div className="text-lg font-black tracking-tight">Nav-eCOM</div>
               <div className="text-[10px] font-medium text-zinc-700">Shop smarter, live better</div>
             </div>
           </button>

@@ -151,7 +151,7 @@ export function SearchAutocomplete({
             onKeyDown={onKeyDown}
             placeholder="Search products, brands and categories..."
             className="h-10 w-full border-0 bg-transparent px-3 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none dark:text-amber-50 dark:placeholder:text-zinc-500"
-            aria-label="Search Z Shop"
+            aria-label="Search Nav-eCOM"
             autoComplete="off"
           />
           <button

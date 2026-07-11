@@ -52,7 +52,7 @@ export function AuthModal() {
   }
 
   function fillDemo() {
-    setForm({ name: 'Demo User', email: 'demo@zshop.com', password: 'demo1234' })
+    setForm({ name: 'Demo User', email: 'demo@navecom.com', password: 'demo1234' })
     toast.info('Demo credentials filled — click Sign in')
   }
 
@@ -64,9 +64,9 @@ export function AuthModal() {
           <DialogHeader className="space-y-1 p-0">
             <div className="mb-2 flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-md bg-zinc-900 text-amber-400">
-                <span className="text-base font-black">Z</span>
+                <span className="text-base font-black">N</span>
               </div>
-              <span className="text-sm font-bold">Z Shop</span>
+              <span className="text-sm font-bold">Nav-eCOM</span>
             </div>
             <DialogTitle className="text-2xl font-black">
               {authMode === 'login' ? 'Welcome back' : 'Create your account'}
@@ -74,7 +74,7 @@ export function AuthModal() {
             <DialogDescription className="text-zinc-800/80">
               {authMode === 'login'
                 ? 'Sign in to continue shopping your favorite products.'
-                : 'Join Z Shop for a faster checkout and exclusive perks.'}
+                : 'Join Nav-eCOM for a faster checkout and exclusive perks.'}
             </DialogDescription>
           </DialogHeader>
         </div>
@@ -162,7 +162,7 @@ export function AuthModal() {
               <Check size={12} /> Demo credentials
             </div>
             <div className="mt-1 font-mono text-[11px]">
-              demo@zshop.com / demo1234
+              demo@navecom.com / demo1234
             </div>
           </div>
 

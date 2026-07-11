@@ -103,7 +103,7 @@ function generateInvoiceHTML(order: Order, format: (n: number) => string): strin
 <body>
   <div class="header">
     <div class="logo">
-      <div><span class="z">Z</span>Z Shop</div>
+      <div><span class="z">N</span>Nav-eCOM</div>
       <div class="tagline">Shop smarter, live better</div>
     </div>
     <div class="invoice-meta">
@@ -127,11 +127,11 @@ function generateInvoiceHTML(order: Order, format: (n: number) => string): strin
     </div>
     <div class="info-box">
       <div class="section-title">From</div>
-      <p class="name">Z Shop Inc.</p>
+      <p class="name">Nav-eCOM Inc.</p>
       <p>123 Commerce Street</p>
       <p>San Francisco, CA 94103</p>
       <p>United States</p>
-      <p>support@zshop.com · 1-800-ZSHOP-01</p>
+      <p>support@navecom.com · 1-800-NECOM-01</p>
     </div>
   </div>
 
@@ -159,9 +159,9 @@ function generateInvoiceHTML(order: Order, format: (n: number) => string): strin
   <div class="clear"></div>
 
   <div class="footer">
-    <p>Thank you for shopping with Z Shop! Need help? Contact <a href="mailto:support@zshop.com">support@zshop.com</a></p>
+    <p>Thank you for shopping with Nav-eCOM! Need help? Contact <a href="mailto:support@navecom.com">support@navecom.com</a></p>
     <p>This is a computer-generated invoice and does not require a signature.</p>
-    <p>© ${new Date().getFullYear()} Z Shop Inc. · All rights reserved.</p>
+    <p>© ${new Date().getFullYear()} Nav-eCOM Inc. · All rights reserved.</p>
   </div>
 
   <script>

@@ -233,7 +233,7 @@ export function GiftCardManager() {
                 rows={2}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="Happy birthday! Enjoy shopping at Z Shop 🎁"
+                placeholder="Happy birthday! Enjoy shopping at Nav-eCOM 🎁"
                 maxLength={300}
                 className="mt-1 text-sm"
               />

@@ -87,7 +87,7 @@ export const useCart = create<CartState>()(
       totalItems: () => get().items.reduce((sum, i) => sum + i.quantity, 0),
       subtotal: () => get().items.reduce((sum, i) => sum + i.price * i.quantity, 0),
     }),
-    { name: 'zshop-cart', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-cart', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -112,7 +112,7 @@ export const useWishlist = create<WishlistState>()(
       has: (id) => get().productIds.includes(id),
       clear: () => set({ productIds: [] }),
     }),
-    { name: 'zshop-wishlist', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-wishlist', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -242,7 +242,7 @@ export const useRecent = create<RecentState>()(
         })),
       clear: () => set({ productIds: [] }),
     }),
-    { name: 'zshop-recent', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-recent', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -286,7 +286,7 @@ export const useCompare = create<CompareState>()(
       closeCompare: () => set({ isOpen: false }),
     }),
     {
-      name: 'zshop-compare',
+      name: 'navecom-compare',
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({ productIds: s.productIds }) as any,
     }
@@ -355,7 +355,7 @@ export const usePromo = create<PromoState>()(
         set({ code, rate: 0, flatAmountUsd: balance, isLoyalty: false, loyaltyPointsUsed: 0, isGiftCard: true, giftCardBalance: balance }),
       clear: () => set({ code: null, rate: 0, flatAmountUsd: 0, isLoyalty: false, loyaltyPointsUsed: 0, isGiftCard: false, giftCardBalance: 0 }),
     }),
-    { name: 'zshop-promo', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-promo', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -388,7 +388,7 @@ export const useCurrency = create<CurrencyState>()(
       code: 'USD',
       setCode: (code) => set({ code }),
     }),
-    { name: 'zshop-currency', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-currency', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -427,7 +427,7 @@ export const usePriceAlerts = create<PriceAlertState>()(
       has: (productId) => get().alerts.some((a) => a.productId === productId),
       clear: () => set({ alerts: [] }),
     }),
-    { name: 'zshop-price-alerts', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-price-alerts', storage: createJSONStorage(() => localStorage) }
   )
 )
 
@@ -448,6 +448,6 @@ export const useRecentSearches = create<RecentSearchStore>()(
         })),
       clear: () => set({ recent: [] }),
     }),
-    { name: 'zshop-recent-searches', storage: createJSONStorage(() => localStorage) }
+    { name: 'navecom-recent-searches', storage: createJSONStorage(() => localStorage) }
   )
 )

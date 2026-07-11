@@ -582,7 +582,7 @@ function ProductEditor({
         id: form.id || undefined,
         name: form.name,
         brand: form.brand,
-        description: form.description || 'A great product from Z Shop.',
+        description: form.description || 'A great product from Nav-eCOM.',
         price: parseFloat(form.price),
         compareAt: form.compareAt ? parseFloat(form.compareAt) : null,
         stock: parseInt(form.stock),
@@ -1000,7 +1000,7 @@ function CustomersTab() {
                         <Button size="icon" variant="ghost" className="h-7 w-7" onClick={() => adjustPoints(c)} title="Adjust points">
                           <Sparkles size={12} />
                         </Button>
-                        <Button size="icon" variant="ghost" className="h-7 w-7" onClick={() => toggleRole(c)} title="Toggle admin role" disabled={c.email === 'demo@zshop.com'}>
+                        <Button size="icon" variant="ghost" className="h-7 w-7" onClick={() => toggleRole(c)} title="Toggle admin role" disabled={c.email === 'demo@navecom.com'}>
                           <Crown size={12} />
                         </Button>
                         <Button size="icon" variant="ghost" className="h-7 w-7" onClick={() => toggleBan(c)} title={c.banned ? 'Unban' : 'Ban'} disabled={c.role === 'admin'}>

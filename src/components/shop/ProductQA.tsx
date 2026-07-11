@@ -139,7 +139,7 @@ export function ProductQA({ productId }: { productId: string }) {
             <HelpCircle size={14} className="text-violet-600" /> Have a question?
           </h3>
           <p className="mt-1 text-xs text-muted-foreground">
-            Get answers from the community and Z Shop experts.
+            Get answers from the community and Nav-eCOM experts.
           </p>
           <Textarea
             rows={3}
