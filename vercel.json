@@ -1,0 +1,18 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "devCommand": "next dev -p 3000",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection string for Neon database"
+    },
+    "SESSION_SECRET": {
+      "description": "Secret key for session management"
+    },
+    "GROQ_API_KEY": {
+      "description": "API key for Groq AI services"
+    }
+  }
+}
